@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Car Price Prediction</title>
+</head>
+    
+<body>
+
+ <div class="regform"><h1>Car Price Prediction</h1></div>
+        <div class="main">
+        <form action="{{ url_for('predict')}}" method="post">
+          <div id="name">  
+                          
+            <h3 id= "ques">What is the Present Market Price of Car ?</h3>
+            <input id="first" name="Present_Price" placeholder='Car Price in lakhs' required="required">
+            
+            <h3 id= "ques">How many Kilometers Drived?</h3>
+            <input id="first" name="Kms_Driven" placeholder= "Kms driven by Car" required="required">              
+                          
+            <h3 id= "ques">How much owners previously had the car (0 or 1 or 3) ?</h3>
+            <input id="first" name="Owner" placeholder= "Number of Owners" required="required"><br>
+              
+            <h3 id= "ques">How old is the Car ?</h3>
+            <input id="first" name="Year" placeholder= "Number of Years" type="number">              
+            
+            <h3 id= "ques">What is the Fuel Type ?</h3>
+            <select name="Fuel_Type_Petrol" id="resea" required="required">
+                <option disabled="disabled" selected="selected">--Choose Option--</option>
+                <option value="Petrol">Petrol</option>
+                <option value="Diesel">Diesel</option>
+                <option value="CNG">CNG</option>
+            </select>
+            
+            <h3 id= "ques">Are you A Dealer or Individual ?</h3>
+            <select name="Seller_Type_Individual" id="resea" required="required">
+                <option disabled="disabled" selected="selected">--Choose Option--</option>
+                <option value="Dealer">Dealer</option>
+                <option value="Individual">Individual</option>
+            </select>
+            
+            <h3 id= "ques">What is the Transmission Type ?</h3>
+            <select name="Transmission_Mannual" id="resea" required="required">
+                <option disabled="disabled" selected="selected">--Choose Option--</option>
+                <option value="Mannual">Mannual</option>
+                <option value="Automatic">Automatic</option>
+            </select><br>       
+
+                      
+            <button id="sub" type="submit">Predict</button>
+            <br>
+        
+            <h3 id="score">{{ prediction_text }}</h3>
+       
+        </div>            
+    </form>        
+    </div>
+        <br><br>
+        <p class='footer-description'>©2021 Sumit Mohod</p>
+    
+    <style>
+/* Background Image */
+        body {
+            background-image:url("https://www.teknos.com/globalassets/teknos.com/industrial-coatings/special-applications/road-marking-and-parking-lots/road-marking.jpg");
+            height: 100%;
+
+/* Center and scale the image nicely */
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        
+        body {
+            
+            text-align: center;
+            padding: 10px
+        }
+        
+        .regform {
+                width:800px;               
+                background-color:rgba(63, 70, 66, 0.8);
+                margin:auto;
+                color:#FFFFFF;
+                padding:10px 0px 10px 0px;
+                text-align:center;
+                border-radius:15px 15px 0px 0px;
+        }
+
+        .main{
+            background-color:rgba(90, 94, 92, 0.7);
+            width:800px;  
+            margin:auto;
+            border-radius:0px 0px 20px 20px;
+        }
+
+        form{
+            padding:30px;
+        }
+
+        #name{
+            width:100%;
+            height:1030px;
+        }
+        
+        
+        #box {
+            border-radius: 60px;
+            border-style: solid;
+            text-align: center;
+            width: 1100px;
+            height: 950px;
+            right: 30%;
+            padding: 0px;
+            margin: 0px;
+            font-size: 18px;
+        }
+        
+        #resea {
+            width: 30%;
+            height: 43px;
+            text-align: center;
+            border-radius: 60px;
+            font-size: 18px;
+            margin-bottom: 20px;
+        }
+        
+        #resea:hover {
+            background-color: white;
+        }
+        
+        #sub {
+            width: 20%;
+            height: 45px;
+            background-color: aqua;
+            text-align: center;
+            border-radius: 14px;
+            font-size: 18px;
+            margin-top: 40px;
+        }
+        
+        #sub:hover {
+            background-color: blue;
+        }
+        
+        #first {
+            border-radius: 14px;
+            height: 25;
+            font-size: 18px;
+            margin-bottom: 40px;
+            text-align: center;
+            font-weight: bold;
+        }
+        
+        #ques{
+            font-size: 20px;
+        }
+        
+        #score {
+            background-color: ;
+            color: white;
+            font-weight: 400;
+            margin-left: 31%;
+            text-align: center;
+            padding: 1%;
+            width: 35%;
+            font-weight: bolder;
+            font-size: 25px;
+        }
+        
+        .footer-description {
+            color: white;
+            padding: 0px
+        }        
+        
+    </style>
+    
+    
+</body>
+    
+</html>
