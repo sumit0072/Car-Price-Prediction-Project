@@ -1,3 +1,11 @@
+
+
+![GitHub repo size](https://img.shields.io/github/repo-size/sumit0072/Predictive-Analysis?style=plastic)
+![GitHub language count](https://img.shields.io/github/languages/count/sumit0072/Predictive-Analysis?style=plastic)
+![GitHub top language](https://img.shields.io/github/languages/top/sumit0072/Predictive-Analysis?style=plastic)
+![GitHub last commit](https://img.shields.io/github/last-commit/sumit0072/Predictive-Analysis?color=red&style=plastic)
+
+
 # Car-Price-Prediction
 This is a predictive analysis of a dataset from CAR DEKHO. This is an end to end machine learning model.
 
