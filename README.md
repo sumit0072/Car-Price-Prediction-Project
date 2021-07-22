@@ -51,3 +51,9 @@ The columns in the given dataset are as follows:
 
 <h1>Car Price Prediction API Link</h1>
 For API <a href='https://prediction-carprice-api.herokuapp.com/'><b>Click Here</b></a>
+
+<h2>Technologies Used</h2>
+
+![](https://forthebadge.com/images/badges/made-with-python.svg)
+
+[<img target="_blank" src="https://flask.palletsprojects.com/en/1.1.x/_images/flask-logo.png" width=170>](https://flask.palletsprojects.com/en/1.1.x/) 
